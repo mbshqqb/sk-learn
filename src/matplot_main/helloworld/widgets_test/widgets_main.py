@@ -11,7 +11,7 @@ plt.subplots_adjust(bottom=0.2)
 line,=plt.plot(x,y)
 
 def next(event):
-    print(event)
+    # plt.plot(x,y+1)#为什么把图绘到了button上？？？？？？？？？
     line.set_ydata(y+1)
     plt.draw()
 ax_btn = plt.axes([0.81, 0.05, 0.1, 0.075])
