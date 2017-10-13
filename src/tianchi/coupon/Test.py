@@ -13,5 +13,6 @@ test=test.astype({'User_id':'int64','Merchant_id':'int64','Coupon_id':'int64','D
 
 test['discount']=test['Discount_rate'].apply(lambda x: float(x) if x.find(':')==-1 else float(x.split(':')[1])/float(x.split(':')[0]))
 
+
 test.drop()
 print(test.head())
